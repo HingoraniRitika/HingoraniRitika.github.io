@@ -3,16 +3,16 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
+  background: #f5f7fa;
   color: #333;
 }
 
 header {
   text-align: center;
-  background: #2d3e50;
+  background: #1f2937;
   color: white;
   padding: 2rem 1rem;
   position: sticky;
@@ -28,12 +28,12 @@ header nav a {
   color: #ddd;
   text-decoration: none;
   margin: 0 1rem;
-  font-weight: bold;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
 header nav a:hover {
-  color: #ffffff;
+  color: white;
 }
 
 .profile-img {
@@ -46,16 +46,16 @@ header nav a:hover {
 }
 
 main {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 section.visible {
@@ -64,7 +64,7 @@ section.visible {
 }
 
 section h2 {
-  border-bottom: 2px solid #2d3e50;
+  border-bottom: 2px solid #1f2937;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -77,13 +77,44 @@ ul {
 ul li {
   background: white;
   padding: 1rem;
-  margin-bottom: 0.5rem;
-  border-radius: 5px;
+  margin-bottom: 0.75rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
 ul li:hover {
   transform: scale(1.02);
+}
+
+.project {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.project p {
+  margin: 0.5rem 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  text-align: left;
 }
 
 .contact-buttons {
@@ -93,7 +124,7 @@ ul li:hover {
 }
 
 .button {
-  background: #2d3e50;
+  background: #1f2937;
   color: white;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
@@ -102,12 +133,12 @@ ul li:hover {
 }
 
 .button:hover {
-  background: #405b75;
+  background: #374151;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #2d3e50;
+  background: #1f2937;
   color: white;
 }
