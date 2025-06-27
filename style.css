@@ -1,18 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f7fa;
+  background: #f0f4f8;
   color: #333;
 }
 
 header {
   text-align: center;
-  background: #1f2937;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
   color: white;
   padding: 2rem 1rem;
   position: sticky;
@@ -25,7 +27,7 @@ header nav {
 }
 
 header nav a {
-  color: #ddd;
+  color: #dbeafe;
   text-decoration: none;
   margin: 0 1rem;
   font-weight: 500;
@@ -33,7 +35,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: white;
+  color: #ffffff;
 }
 
 .profile-img {
@@ -46,7 +48,7 @@ header nav a:hover {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -64,9 +66,10 @@ section.visible {
 }
 
 section h2 {
-  border-bottom: 2px solid #1f2937;
+  border-bottom: 3px solid #2563eb;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+  color: #1e3c72;
 }
 
 ul {
@@ -87,34 +90,46 @@ ul li:hover {
   transform: scale(1.02);
 }
 
-.project {
-  background: white;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 6px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-}
-
-.project h3 {
-  margin-top: 0;
-  color: #1f2937;
-}
-
-.project p {
-  margin: 0.5rem 0;
-}
-
 .table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.table th,
-.table td {
-  padding: 0.5rem;
-  border: 1px solid #ddd;
+.table th {
+  background: #2563eb;
+  color: white;
+  padding: 0.75rem;
   text-align: left;
+}
+
+.table td {
+  background: #ffffff;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table tr:hover td {
+  background: #f0f4ff;
+}
+
+.project {
+  background: linear-gradient(135deg, #ffffff, #e0e7ff);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #1e3c72;
 }
 
 .contact-buttons {
@@ -124,7 +139,7 @@ ul li:hover {
 }
 
 .button {
-  background: #1f2937;
+  background: #2563eb;
   color: white;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
@@ -133,12 +148,12 @@ ul li:hover {
 }
 
 .button:hover {
-  background: #374151;
+  background: #1e40af;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #1f2937;
+  background: #1e3c72;
   color: white;
 }
