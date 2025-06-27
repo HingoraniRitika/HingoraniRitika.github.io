@@ -11,15 +11,21 @@
     <img src="profile.jpg" alt="Profile Photo" class="profile-img"/>
     <h1>Ritika Hingorani</h1>
     <p>Project Manager | Scrum Master | Program Manager</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
   <main>
-    <section>
+    <section id="about" class="fade-in">
       <h2>About Me</h2>
       <p>
         I am an experienced Program/Project Manager with a proven history of driving cross-functional teams to deliver high-impact projects. My experience spans eCommerce, SaaS, and AI/ML domains.
       </p>
     </section>
-    <section>
+    <section id="skills" class="fade-in">
       <h2>Skills</h2>
       <ul>
         <li>Agile Project Management</li>
@@ -29,7 +35,7 @@
         <li>Program Planning & Execution</li>
       </ul>
     </section>
-    <section>
+    <section id="projects" class="fade-in">
       <h2>Projects</h2>
       <ul>
         <li>
@@ -43,15 +49,29 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="contact" class="fade-in">
       <h2>Contact</h2>
-      <p>Email: ritika.hingorani@outlook.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/ritika-hingorani" target="_blank">ritika-hingorani</a></p>
-      <p>GitHub: <a href="https://github.com/HingoraniRitika" target="_blank">@HingoraniRitika</a></p>
+      <div class="contact-buttons">
+        <a href="mailto:ritika.hingorani@outlook.com" class="button">Email Me</a>
+        <a href="https://www.linkedin.com/in/ritika-hingorani" target="_blank" class="button">LinkedIn</a>
+        <a href="https://github.com/HingoraniRitika" target="_blank" class="button">GitHub</a>
+      </div>
     </section>
   </main>
   <footer>
     <p>&copy; 2025 Ritika Hingorani</p>
   </footer>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    document.querySelectorAll('.fade-in').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
